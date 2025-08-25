@@ -28,7 +28,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ### 2. Clone and Build
 
 ```sh
-git clone https://github.com/yourusername/rgb-demo-explorer.git
+git clone https://github.com/AreaLayer/rgb-demo-explorer.git
 cd rgb-demo-explorer
 cargo build
 ```
