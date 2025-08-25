@@ -1,6 +1,6 @@
 use anyhow::{Result, anyhow};
-use rgb_std::contract::{ContractId, ContractState};
-use rgb_std::schema::SchemaId;
+use rgbstd::{ContractId, stl::NIA_SCHEMA_ID};
+use std::str::FromStr;
 
 fn rgb_node_url(network: &str) -> &'static str {
     match network {
@@ -16,7 +16,7 @@ pub fn show_contract(network: &str, contract_id: &str) -> Result<()> {
         .map_err(|_| anyhow!("Invalid contract id"))?;
     println!("Network: {network}");
     println!("Contract ID: {id}");
-    println!("Schema ID: {}", SchemaId::NIA); // Demo: show a known schema
+    println!("Schema ID: {}", NIA_SCHEMA_ID); // Demo: show a known schema
     println!("State: <mocked>");
     Ok(())
 }
