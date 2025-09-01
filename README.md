@@ -1,5 +1,7 @@
 # RGB Demo Explorer
 
+**This is demo explorer, use own at risk**
+
 A minimal Rust command-line explorer for the [RGB protocol](https://rgb.tech/), supporting Bitcoin `mainnet`, `testnet3`, and `testnet4` networks.  
 It features public RGB Node integration (e.g., [rgbtools.org](https://rgbtools.org/)), and is ready for extension as a wallet, asset explorer, or DEX interface.
 
